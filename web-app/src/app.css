@@ -198,8 +198,5 @@ h3{
 }
 
 
-.option-one, .option-two, .form-box {
-  border: 1px solid var(--slate-700);
-  border-radius: 4px;
-}
+
 

@@ -1,5 +1,6 @@
 <script>import "./app.css";
-import RadioGroup from "./lib/components/RadioGroup.svelte";
+  import RadioGroup from "./lib/components/RadioGroup.svelte";
+  import Button from "./lib/components/CalculateButton.svelte";
 </script>
 
 <svelte:head>
@@ -21,9 +22,8 @@ import RadioGroup from "./lib/components/RadioGroup.svelte";
       <h3>Interest Rate</h3>
       <RadioGroup />
      
-
-      <button class="calculate-repayments">Calculate Repayments</button>
-    </form>
+      <Button></Button>
+        </form>
 
     
   </section>
