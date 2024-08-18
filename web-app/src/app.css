@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 @font-face {
   font-family: "Plus Jakarta Sans";
   src: url("/fonts/PlusJakartaSans-VariableFont_wght.ttf") format("truetype");
@@ -61,6 +65,7 @@
   --slate-900: hsl(202, 55%, 16%);
   --clr-lime: hsl(61, 70%, 52%);
   --clr-red: hsl(4, 69%, 50%);
+  --form-control-color: var(--clr-lime);
   
   
   
@@ -198,26 +203,3 @@ h3{
   border-radius: 4px;
 }
 
-.form-control {
-  display:block;
-  font-size: var(--step-0);
-  font-weight: bold;
-  line-height: 1.1;
-  padding-block: .25rem;
-
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
-
-  & > :not(.form-control + .form-control){
-    margin-block: 1ch;
-  }
-}
-
-.form-control + .form-control {
-  margin-block: .5ch;
-}
-
-.form-control:is(:hover, :focus){
-  background-color:  var(--clr-lime);
-}

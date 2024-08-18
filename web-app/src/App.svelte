@@ -1,4 +1,5 @@
-<script lang="ts">
+<script>import "./app.css";
+import RadioGroup from "./lib/components/RadioGroup.svelte";
 </script>
 
 <svelte:head>
@@ -6,12 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <!-- displays site properly based on user's device -->
 
-  <link
-    rel="icon"
-    type="image/png"
-    sizes="32x32"
-    href="./assets/images/favicon-32x32.png"
-  />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
 
   <title>Frontend Mentor | Mortgage repayment calculator</title>
 </svelte:head>
@@ -23,28 +19,8 @@
       <h3>Mortgage Amount</h3>
       <h3>Mortgage Term</h3>
       <h3>Interest Rate</h3>
-      <div class="options">
-        <h3>Mortgage Type</h3>
-        <label class="repayment form-box form-control">
-          <input
-            type="radio"
-            name="mortgage-type"
-            id="repayment"
-            value="repayement"
-            checked
-          />
-          Repayment
-        </label>
-        <label class="interest-only form-box form-control">
-          <input
-            type="radio"
-            name="mortgage-type"
-            id="interest-only"
-            value="interest-only"
-          />
-          Interest Only
-        </label>
-      </div>
+      <RadioGroup />
+     
 
       <button class="calculate-repayments">Calculate Repayments</button>
     </form>
@@ -68,6 +44,7 @@
     </div>
   </section>
 </main>
+
 
 <style>
 </style>
